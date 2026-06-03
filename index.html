@@ -353,6 +353,50 @@
 
         .research-intro strong { color: var(--blue-deep); font-weight: 600; }
 
+        .research-lead {
+            font-family: var(--serif-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--blue-deep);
+            line-height: 1.55;
+            margin-bottom: 18px;
+        }
+
+        .research-points {
+            list-style: none;
+            margin: 0 0 20px;
+            padding: 0;
+        }
+
+        .research-points li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 0.92rem;
+            color: var(--ink-mid);
+            line-height: 1.6;
+        }
+
+        .research-points li::before {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 0.55em;
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            transform: rotate(45deg);
+        }
+
+        .research-close {
+            font-size: 0.95rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .research-close strong { color: var(--blue-deep); font-weight: 600; }
+
         .tags {
             display: flex;
             flex-wrap: wrap;
@@ -896,18 +940,27 @@
             <div class="section-rule"></div>
         </div>
 
-        <p class="research-intro">
-            以量化方法為核心工具，探討<strong>人工智慧在政府部門</strong>的具體應用、風險管控與法制規範。
-            當前研究聚焦於<strong>科技執法</strong>場域，分析演算法如何影響行政裁量、專業判斷與人權保障，
-            並致力建構具本土脈絡敏感度的 AI 執法治理理論框架。
+        <p class="research-lead">
+            數位治理是我的學術原點，也是我切入 AI 治理的根本。
+        </p>
+
+        <ul class="research-points">
+            <li>以智慧政府為研究主軸，從政府資料治理延伸到 AI 演算法治理，最終都指向公共價值的實現。</li>
+            <li>運用生成式 AI 親手開發研究與政策工具，整合學術研究工作流，將分析能力延伸為可運作的應用。</li>
+            <li>擅長以結構方程模型（SEM）為核心的量化方法，檢證政府治理行為背後的前因與機制。</li>
+            <li>具備十餘年公務背景與公法教學經驗，讓我能從第一線讀懂法規如何被轉譯與執行，並促成學術與實務對話。</li>
+        </ul>
+
+        <p class="research-close">
+            當前研究聚焦<strong>科技執法</strong>場域，以「<strong>演算法下的守門人</strong>」為核心，探討 AI 執法的決策偏誤、專業衝擊與正當性建構。
         </p>
 
         <div class="tags">
             <span class="tag">#生成式AI與智慧政府</span>
             <span class="tag">#演算法偏誤與課責</span>
             <span class="tag">#科技法與數位人權</span>
-            <span class="tag">#資料治理 Data Governance</span>
-            <span class="tag">#循證決策 Evidence-Based Policy</span>
+            <span class="tag">#資料治理</span>
+            <span class="tag">#公共價值</span>
             <span class="tag">#社會科學量化研究</span>
         </div>
 
