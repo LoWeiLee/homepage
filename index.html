@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>李洛維 Lo-Wei Lee, Ph.D. | 智慧政府・資料治理・科技法制</title>
+    <meta name="description" content="李洛維（Lo-Wei Lee），臺灣警察專科學校助理教授，國立政治大學公共行政學博士。研究領域：智慧政府、政府資料治理、AI 演算法治理與科技法制，擅長以結構方程模型（SEM）為核心的量化方法。">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="李洛維 Lo-Wei Lee, Ph.D.｜智慧政府・資料治理・科技法制">
+    <meta property="og:description" content="臺灣警察專科學校助理教授，政治大學公共行政學博士。研究智慧政府、資料治理與 AI 演算法治理，擅長 SEM 量化方法。">
+    <meta property="og:url" content="https://qqamp.github.io/homepage/">
+    <meta property="og:image" content="https://qqamp.github.io/homepage/profile.jpg">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231c3557'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23d4af65' font-family='serif'%3E%E6%9D%8E%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -223,7 +231,7 @@
 
         .hero-position {
             font-size: 0.95rem;
-            color: rgba(255,255,255,0.75);
+            color: rgba(255,255,255,0.85);
             margin-bottom: 6px;
             display: flex;
             align-items: baseline;
@@ -237,7 +245,7 @@
 
         .hero-edu {
             font-size: 0.875rem;
-            color: rgba(255,255,255,0.55);
+            color: rgba(255,255,255,0.72);
             margin-bottom: 24px;
         }
 
@@ -249,7 +257,7 @@
 
         .hero-contact-item {
             font-size: 0.85rem;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255,255,255,0.78);
             display: flex;
             align-items: center;
             gap: 10px;
@@ -264,7 +272,7 @@
         }
 
         .hero-contact-item a {
-            color: rgba(255,255,255,0.7);
+            color: rgba(255,255,255,0.85);
             text-decoration: none;
             transition: color var(--transition);
         }
@@ -561,6 +569,15 @@
             gap: 10px;
         }
 
+        .pub-category-title::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            background: var(--gold);
+            transform: rotate(45deg);
+            flex-shrink: 0;
+        }
+
         .pub-list {
             list-style: none;
             display: flex;
@@ -574,7 +591,7 @@
             font-size: 0.925rem;
             line-height: 1.7;
             color: var(--ink-mid);
-            text-align: justify;
+            text-align: left;
             border-radius: 3px;
             transition: background var(--transition);
         }
@@ -872,7 +889,9 @@
             .hero-badges { justify-content: center; }
             .hero-contact-item { justify-content: center; }
             nav { padding: 0 16px; }
-            .nav-links { gap: 16px; }
+            .nav-links { gap: 12px; }
+            .nav-links a { font-size: 0.78rem; }
+            .hero-contact-grid { grid-template-columns: 1fr; }
             .project-item { grid-template-columns: 1fr; }
         }
     </style>
@@ -884,9 +903,11 @@
         <a href="#" class="nav-brand" style="text-decoration:none; cursor:pointer;" title="回到頂部">李洛維 <span>Lo-Wei Lee</span>, Ph.D.</a>
         <div class="nav-links">
             <a href="#research">研究</a>
-            <a href="#honors">榮譽</a>
             <a href="#publications">著作</a>
+            <a href="#projects">計畫</a>
+            <a href="#honors">榮譽</a>
             <a href="#teaching">教學</a>
+            <a href="#featured-project">實作</a>
         </div>
     </nav>
 
@@ -898,7 +919,7 @@
             </div>
 
             <div class="hero-text">
-                <div class="hero-name">李洛維</div>
+                <h1 class="hero-name">李洛維</h1>
                 <div class="hero-name-en">Lo-Wei Lee, Ph.D.</div>
                 <div class="hero-rule"></div>
 
@@ -926,7 +947,6 @@
                         116 台北市文山區興隆路三段153號
                     </div>
                 </div>
-
 
             </div>
         </div>
@@ -980,55 +1000,136 @@
         </div>
     </div>
 
-<!-- ── 實作作品 ── -->
-    <div class="section-wrap" id="featured-project">
+    <!-- ── 學術著作 ── -->
+    <div class="section-wrap" id="publications">
         <div class="section-header">
-            <h2 class="section-title">實作作品</h2>
-            <span class="section-title-en">Featured Project</span>
+            <h2 class="section-title">學術著作</h2>
+            <span class="section-title-en">Publications</span>
             <div class="section-rule"></div>
         </div>
 
-        <div class="featured-stack">
-            <a class="impl-project" href="https://qqamp.github.io/duoduorun/" target="_blank" rel="noopener">
-                <div>
-                    <div class="impl-project-eyebrow">
-                        <span class="impl-badge">AI-BUILT · 2026</span>
-                    </div>
-                    <div class="impl-project-name">
-                        多多快跑<span class="impl-project-en">DuoDuoRun</span>
-                    </div>
-                    <div class="impl-project-tagline">
-                        為臺灣社會科學師生量身打造的純前端統計分析工具──結合生成式 AI 開發、社科研究方法與隱私保護設計。
-                    </div>
-                    <div class="impl-project-features">
-                        <span class="impl-feature">14 種統計方法</span>
-                        <span class="impl-feature">對齊 SPSS / JASP</span>
-                        <span class="impl-feature">本地運算・零上傳</span>
-                        <span class="impl-feature">中／英 APA 敘述</span>
-                    </div>
-                </div>
-                <span class="impl-cta">開啟工具 →</span>
-            </a>
+        <!-- 期刊論文 -->
+        <div class="pub-category">
+            <div class="pub-category-title">
+                期刊論文 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">Journal Articles</em>
+            </div>
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <strong>李洛維</strong>（2026）。從身分治理走向能力治理：資料治理成熟度對我國文官制度改革的啟示。<em>文官制度，18</em>（1），59–108。
+                </li>
+                <li class="pub-item">
+                    <span class="label label-tssci">TSSCI</span>
+                    <strong>李洛維</strong>、朱斌妤、曾憲立（2023）。推動政府資料治理的關鍵因素：內部利害關係人角度的因果模型。<em>公共行政學報，64</em>，35–77。
+                </li>
+                <li class="pub-item">
+                    <strong>李洛維</strong>、朱斌妤（2021）。推動服務型智慧政府的核心引擎－資料治理的挑戰與對策。<em>文官制度，13</em>（2），115–151。
+                </li>
+            </ul>
+        </div>
 
-            <div class="impl-project impl-project-locked">
+        <!-- 撰稿中 -->
+        <div class="pub-category">
+            <div class="pub-category-title">
+                撰稿中 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">In Preparation</em>
+            </div>
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <span class="label label-draft">初稿完成</span>
+                    <strong>李洛維</strong>。多重邏輯下的治理落差：政府資料治理能力建構的制度困境與個案比較分析。
+                </li>
+                <li class="pub-item">
+                    <span class="label label-writing">撰稿中</span>
+                    <strong>Lee, L.W.</strong> Inside the Agency: An Internal-Stakeholder Model of Data Governance Behavior in Government.
+                </li>
+            </ul>
+        </div>
+
+        <!-- 研討會論文 -->
+        <div class="pub-category">
+            <div class="pub-category-title">
+                研討會論文 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">Conference Papers</em>
+            </div>
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <strong>李洛維</strong>（2025）。科層失靈或能力崛起？從資料治理成熟度診斷我國文官制度的轉型挑戰。《文官制度》跨世代學術交流圓桌論壇，台北。
+                </li>
+                <li class="pub-item">
+                    吳冠杰、<strong>李洛維</strong>（2024）。警察「警察敘事能力與溝通」課程學習成效評估—以警專生學習執行治安及交通勤務為例。113年道路交通管理實務與學術研討會，台北。
+                </li>
+                <li class="pub-item">
+                    王旭昇、沈明昌、<strong>李洛維</strong>（2023）。警察敘事能力與溝通教學成效之比較研究。112年臺灣警察專科學校精進校務發展研究計畫發表會，台北。
+                </li>
+                <li class="pub-item">
+                    王旭昇、沈明昌、<strong>李洛維</strong>（2022）。警察敘事能力與溝通教學成效研究。111年臺灣警察專科學校精進校務發展研究計畫發表會，台北。
+                </li>
+                <li class="pub-item">
+                    廖興中、黃婉玲、<strong>李洛維</strong>、朱斌妤（2019）。臺灣各鄉鎮數位發展分類研究：集群分析與潛在全象分析的啟發。2019年 TASPAA 年會，台中。
+                </li>
+                <li class="pub-item">
+                    蕭乃沂、李蔡彥、楊子申、<strong>李洛維</strong>、許鈺昕（2018）。新時代文官數位治理核心能力的界定與培訓。2018年 TASPAA 年會，台北。
+                </li>
+                <li class="pub-item">
+                    <strong>Lee, L.W.</strong>, and Chu, P.Y. (2018). A User Approach to Open Government Data Impact Assessment. <em>The 18th European Conference on eGovernment</em>, University of Santiago de Compostela.
+                </li>
+                <li class="pub-item">
+                    <strong>Lee, L.W.</strong>, and Tseng, H.L. (2018). Citizen Participation and e-Government Usage Satisfaction in Taiwan. <em>The 18th European Conference on eGovernment</em>, University of Santiago de Compostela.
+                </li>
+            </ul>
+        </div>
+
+        <!-- 專書篇章 -->
+        <div class="pub-category">
+            <div class="pub-category-title">
+                專書篇章 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">Book Chapters</em>
+            </div>
+            <ul class="pub-list">
+                <li class="pub-item">
+                    朱斌妤、<strong>李洛維</strong>（2023）。何謂資料治理？載於朱斌妤等編，《政府資料治理：理論建構與個案演練》（頁5–28）。五南。
+                </li>
+                <li class="pub-item">
+                    朱斌妤、<strong>李洛維</strong>（2020）。看不見的幕後英雄：淺談資料治理。載於陳敦源等編，《政府數位轉型：一本必讀的入門書》（頁155–164）。五南。
+                </li>
+            </ul>
+        </div>
+
+        <!-- 其他發表 -->
+        <div class="pub-category">
+            <div class="pub-category-title">
+                其他發表 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">Other Publications</em>
+            </div>
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <strong>李洛維</strong>、朱斌妤（2021）。我究竟同意了什麼？淺談智慧政府下 MyData 面臨的困難與挑戰。《T&D 飛訊》，287，1–36。
+                </li>
+                <li class="pub-item">
+                    <strong>李洛維</strong>、朱斌妤（2019）。公部門資料治理的發展與挑戰。《T&D 飛訊》，253，1–26。
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ── 委託計畫 ── -->
+    <div class="section-wrap" id="projects">
+        <div class="section-header">
+            <h2 class="section-title">研究計畫</h2>
+            <span class="section-title-en">Research Projects</span>
+            <div class="section-rule"></div>
+        </div>
+
+        <div class="project-list">
+            <div class="project-item">
                 <div>
-                    <div class="impl-project-eyebrow">
-                        <span class="impl-badge impl-badge-internal">INTERNAL · 中央機關</span>
-                    </div>
-                    <div class="impl-project-name">
-                        中央機關 AI 應用調查查詢系統<span class="impl-project-en">AI Adoption Survey</span>
-                    </div>
-                    <div class="impl-project-tagline">
-                        153 筆中央政府機關 AI 應用案例的互動式查詢系統──整合 AI WATCH 框架的組織特徵、服務描述、服務價值三類特徵，可分析 AI 技術類型、應用目的、應用領域、應用範疇、主要功能、預期效益與資料來源。
-                    </div>
-                    <div class="impl-project-features">
-                        <span class="impl-feature">153 筆中央機關案例</span>
-                        <span class="impl-feature">AI WATCH 三類特徵</span>
-                        <span class="impl-feature">技術／效益／領域分析</span>
-                        <span class="impl-feature">互動式網頁查詢</span>
-                    </div>
+                    <div class="project-name">六都數位政策調查</div>
+                    <div class="project-meta">台灣數位平台經濟協會 &ensp;｜&ensp; 2025.08 – 2026.04</div>
                 </div>
-                <span class="impl-cta-locked"><span>🔒</span><span class="impl-cta-locked-text">研究團隊<br>內部使用</span></span>
+                <span class="project-role">協同主持人</span>
+            </div>
+            <div class="project-item">
+                <div>
+                    <div class="project-name">資料管理技術實踐與政策發展資訊服務案</div>
+                    <div class="project-meta">數位發展部 &ensp;｜&ensp; 2025.09 – 2026.11</div>
+                </div>
+                <span class="project-role">顧問</span>
             </div>
         </div>
     </div>
@@ -1062,148 +1163,6 @@
         </div>
     </div>
 
-    <!-- ── 委託計畫 ── -->
-    <div class="section-wrap" id="projects">
-        <div class="section-header">
-            <h2 class="section-title">委託研究計畫</h2>
-            <span class="section-title-en">Commissioned Research</span>
-            <div class="section-rule"></div>
-        </div>
-
-        <div class="project-list">
-            <div class="project-item">
-                <div>
-                    <div class="project-name">六都數位政策調查</div>
-                    <div class="project-meta">台灣數位平台經濟協會 &ensp;｜&ensp; 2025.08 – 2026.04</div>
-                </div>
-                <span class="project-role">協同主持人</span>
-            </div>
-            <div class="project-item">
-                <div>
-                    <div class="project-name">資料管理技術實踐與政策發展資訊服務案</div>
-                    <div class="project-meta">數位發展部 &ensp;｜&ensp; 2025.09 – 2026.11</div>
-                </div>
-                <span class="project-role">顧問</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- ── 學術著作 ── -->
-    <div class="section-wrap" id="publications">
-        <div class="section-header">
-            <h2 class="section-title">學術著作</h2>
-            <span class="section-title-en">Publications</span>
-            <div class="section-rule"></div>
-        </div>
-
-        <!-- 期刊論文 -->
-        <div class="pub-category">
-            <div class="pub-category-title">
-                <span>📝</span> 期刊論文 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">Journal Articles</em>
-            </div>
-            <ul class="pub-list">
-                <li class="pub-item">
-                    <strong>李洛維</strong>（2026）。從身分治理走向能力治理：資料治理成熟度對我國文官制度改革的啟示。<em>文官制度，18</em>（1），59–108。
-                </li>
-                <li class="pub-item">
-                    <span class="label label-tssci">TSSCI</span>
-                    <strong>李洛維</strong>、朱斌妤、曾憲立（2023）。推動政府資料治理的關鍵因素：內部利害關係人角度的因果模型。<em>公共行政學報，64</em>，35–77。
-                </li>
-                <li class="pub-item">
-                    <strong>李洛維</strong>、朱斌妤（2021）。推動服務型智慧政府的核心引擎－資料治理的挑戰與對策。<em>文官制度，13</em>（2），115–151。
-                </li>
-            </ul>
-        </div>
-
-        <!-- 撰稿中 -->
-        <div class="pub-category">
-            <div class="pub-category-title">
-                <span>✍️</span> 撰稿中 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">In Preparation</em>
-            </div>
-            <ul class="pub-list">
-                <li class="pub-item">
-                    <span class="label label-draft">初稿完成</span>
-                    <strong>李洛維</strong>。多重邏輯下的治理落差：政府資料治理能力建構的制度困境與個案比較分析。
-                </li>
-                <li class="pub-item">
-                    <span class="label label-writing">撰稿中</span>
-                    <strong>Lee, L.W.</strong> Inside the Agency: An Internal-Stakeholder Model of Data Governance Behavior in Government.
-                </li>
-                <li class="pub-item">
-                    <span class="label label-draft">資料蒐集完成</span>
-                    <strong>李洛維</strong>。我國智慧城市評估初探：本土化框架與指標建構。
-                </li>
-                <li class="pub-item">
-                    <span class="label label-writing">資料整理中</span>
-                    <strong>李洛維</strong>。從自動化偏誤到正當性建構的演算法治理整合框架。
-                </li>
-            </ul>
-        </div>
-
-        <!-- 研討會論文 -->
-        <div class="pub-category">
-            <div class="pub-category-title">
-                <span>🎤</span> 研討會論文 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">Conference Papers</em>
-            </div>
-            <ul class="pub-list">
-                <li class="pub-item">
-                    <strong>李洛維</strong>（2025）。科層失靈或能力崛起？從資料治理成熟度診斷我國文官制度的轉型挑戰。《文官制度》跨世代學術交流圓桌論壇，台北。
-                </li>
-                <li class="pub-item">
-                    吳冠杰、<strong>李洛維</strong>（2024）。警察「警察敘事能力與溝通」課程學習成效評估—以警專生學習執行治安及交通勤務為例。113年道路交通管理實務與學術研討會，台北。
-                </li>
-                <li class="pub-item">
-                    王旭昇、沈明昌、<strong>李洛維</strong>（2023）。警察敘事能力與溝通教學成效之比較研究。112年臺灣警察專科學校精進校務發展研究計畫發表會，台北。
-                </li>
-                <li class="pub-item">
-                    王旭昇、沈明昌、<strong>李洛維</strong>（2022）。警察敘事能力與溝通教學成效研究。111年臺灣警察專科學校精進校務發展研究計畫發表會，台北。
-                </li>
-                <li class="pub-item">
-                    廖興中、黃婉玲、<strong>李洛維</strong>、朱斌妤（2019）。臺灣各鄉鎮數位發展分類研究：集群分析與潛在全象分析的啟發。2019年 TASPAA 年會，台中。
-                </li>
-                <li class="pub-item">
-                    蕭乃沂、李蔡彥、楊子申、<strong>李洛維</strong>、許鈺昕（2018）。新時代文官數位治理核心能力的界定與培訓。2018年 TASPAA 年會，台北。
-                </li>
-                <li class="pub-item">
-                    <strong>Lee, L.W.</strong>, and Chu, P.Y. (2018). A User Approach to Open Government Data Impact Assessment. <em>The 18th European Conference on eGovernment</em>, University of Santiago de Compostela.
-                </li>
-                <li class="pub-item">
-                    <strong>Lee, L.W.</strong>, and Tseng, H.L. (2018). Citizen Participation and e-Government Usage Satisfaction in Taiwan. <em>The 18th European Conference on eGovernment</em>, University of Santiago de Compostela.
-                </li>
-            </ul>
-        </div>
-
-        <!-- 專書篇章 -->
-        <div class="pub-category">
-            <div class="pub-category-title">
-                <span>📖</span> 專書篇章 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">Book Chapters</em>
-            </div>
-            <ul class="pub-list">
-                <li class="pub-item">
-                    朱斌妤、<strong>李洛維</strong>（2023）。何謂資料治理？載於朱斌妤等編，《政府資料治理：理論建構與個案演練》（頁5–28）。五南。
-                </li>
-                <li class="pub-item">
-                    朱斌妤、<strong>李洛維</strong>（2020）。看不見的幕後英雄：淺談資料治理。載於陳敦源等編，《政府數位轉型：一本必讀的入門書》（頁155–164）。五南。
-                </li>
-            </ul>
-        </div>
-
-        <!-- 其他發表 -->
-        <div class="pub-category">
-            <div class="pub-category-title">
-                <span>📰</span> 其他發表 &nbsp;<em style="font-size:0.8rem; font-weight:400; color:var(--ink-light)">Other Publications</em>
-            </div>
-            <ul class="pub-list">
-                <li class="pub-item">
-                    <strong>李洛維</strong>、朱斌妤（2021）。我究竟同意了什麼？淺談智慧政府下 MyData 面臨的困難與挑戰。《T&D 飛訊》，287，1–36。
-                </li>
-                <li class="pub-item">
-                    <strong>李洛維</strong>、朱斌妤（2019）。公部門資料治理的發展與挑戰。《T&D 飛訊》，253，1–26。
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <!-- ── 教學 ── -->
     <div class="section-wrap" id="teaching" style="background: var(--cream); max-width:100%; padding-left: 0; padding-right: 0;">
         <div style="max-width:1080px; margin:0 auto; padding: 60px clamp(20px, 5vw, 40px);">
@@ -1215,7 +1174,7 @@
 
             <div class="teaching-grid">
                 <div class="teaching-card">
-                    <div class="teaching-card-title">📘 公共政策</div>
+                    <div class="teaching-card-title">公共政策</div>
                     <ul>
                         <li>智慧治理與未來趨勢</li>
                         <li>政府資料治理與數位轉型</li>
@@ -1224,7 +1183,7 @@
                     </ul>
                 </div>
                 <div class="teaching-card">
-                    <div class="teaching-card-title">📊 量化方法</div>
+                    <div class="teaching-card-title">量化方法</div>
                     <ul>
                         <li>量化研究法</li>
                         <li>應用統計學</li>
@@ -1232,7 +1191,7 @@
                     </ul>
                 </div>
                 <div class="teaching-card">
-                    <div class="teaching-card-title">⚖️ 法律</div>
+                    <div class="teaching-card-title">法律</div>
                     <ul>
                         <li>憲法</li>
                         <li>行政法</li>
@@ -1242,10 +1201,63 @@
         </div>
     </div>
 
+    <!-- ── 實作作品 ── -->
+    <div class="section-wrap" id="featured-project">
+        <div class="section-header">
+            <h2 class="section-title">實作作品</h2>
+            <span class="section-title-en">Featured Project</span>
+            <div class="section-rule"></div>
+        </div>
+
+        <div class="featured-stack">
+            <a class="impl-project" href="https://qqamp.github.io/duoduorun/" target="_blank" rel="noopener">
+                <div>
+                    <div class="impl-project-eyebrow">
+                        <span class="impl-badge">AI-BUILT · 2026</span>
+                    </div>
+                    <div class="impl-project-name">
+                        多多快跑<span class="impl-project-en">DuoDuoRun</span>
+                    </div>
+                    <div class="impl-project-tagline">
+                        為臺灣社會科學師生量身打造的純前端統計分析工具：結合生成式 AI 開發、社科研究方法與隱私保護設計。
+                    </div>
+                    <div class="impl-project-features">
+                        <span class="impl-feature">14 種統計方法</span>
+                        <span class="impl-feature">對齊 SPSS / JASP</span>
+                        <span class="impl-feature">本地運算・零上傳</span>
+                        <span class="impl-feature">中／英 APA 敘述</span>
+                    </div>
+                </div>
+                <span class="impl-cta">開啟工具 →</span>
+            </a>
+
+            <div class="impl-project impl-project-locked">
+                <div>
+                    <div class="impl-project-eyebrow">
+                        <span class="impl-badge impl-badge-internal">INTERNAL · 中央機關</span>
+                    </div>
+                    <div class="impl-project-name">
+                        中央機關 AI 應用調查查詢系統<span class="impl-project-en">AI Adoption Survey</span>
+                    </div>
+                    <div class="impl-project-tagline">
+                        153 筆中央政府機關 AI 應用案例的互動式查詢系統：整合 AI WATCH 框架的組織特徵、服務描述、服務價值三類特徵，可分析 AI 技術類型、應用目的、應用領域、應用範疇、主要功能、預期效益與資料來源。
+                    </div>
+                    <div class="impl-project-features">
+                        <span class="impl-feature">153 筆中央機關案例</span>
+                        <span class="impl-feature">AI WATCH 三類特徵</span>
+                        <span class="impl-feature">技術／效益／領域分析</span>
+                        <span class="impl-feature">互動式網頁查詢</span>
+                    </div>
+                </div>
+                <span class="impl-cta-locked"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9z"/></svg><span class="impl-cta-locked-text">研究團隊<br>內部使用</span></span>
+            </div>
+        </div>
+    </div>
+
     <!-- ── Footer ── -->
     <footer>
         <p>&copy; 2026 李洛維 Lo-Wei Lee, Ph.D. &ensp;·&ensp; 臺灣警察專科學校</p>
-        <p style="margin-top: 6px; font-size:0.78rem; opacity:0.6;">Updated: June 2026</p>
+        <p style="margin-top: 6px; font-size:0.78rem; opacity:0.6;">Updated: July 2026</p>
     </footer>
 
 <script data-goatcounter="https://qqamp.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
