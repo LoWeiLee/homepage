@@ -2,7 +2,7 @@
 
 個人學術網站原始碼，發布於 GitHub Pages：
 
-**<https://qqamp.github.io/homepage/>**
+**<https://loweilee.github.io/homepage/>**
 
 研究領域：智慧政府、政府資料治理、AI 演算法治理與科技法制。
 
