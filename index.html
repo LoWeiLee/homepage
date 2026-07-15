@@ -506,13 +506,6 @@
             letter-spacing: 0.05em;
         }
 
-        /* ── 計畫與榮譽（雙欄） ── */
-        .dual-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
         .subsection-title {
             font-family: var(--serif-display);
             font-size: 1.15rem;
@@ -622,6 +615,82 @@
             padding: 3px 10px;
             border-radius: 2px;
             white-space: nowrap;
+        }
+
+        /* ── 計畫與榮譽（堆疊） ── */
+        .projects-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+
+        .project-group { margin-bottom: 28px; }
+        .project-group:last-child { margin-bottom: 0; }
+
+        .project-group-label {
+            font-family: var(--mono);
+            font-size: 0.76rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--blue-mid);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .project-group-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--rule);
+        }
+
+        /* 國科會旗艦計畫卡 */
+        .nstc-project {
+            padding: 24px 26px;
+            background: linear-gradient(160deg, var(--blue-pale) 0%, var(--white) 65%);
+            border: 1px solid var(--gold);
+            border-radius: 6px;
+            box-shadow: 0 4px 22px rgba(0,0,0,0.05);
+        }
+        .nstc-project-head {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 16px;
+            align-items: start;
+            margin-bottom: 18px;
+        }
+        .nstc-project-name {
+            font-family: var(--serif-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--blue-deep);
+            line-height: 1.45;
+        }
+        .project-role--pi {
+            background: var(--gold);
+            color: var(--ink);
+            font-weight: 700;
+        }
+        .nstc-project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .nstc-meta-chip {
+            font-size: 0.8rem;
+            color: var(--ink-mid);
+            background: var(--white);
+            border: 1px solid var(--rule);
+            border-radius: 3px;
+            padding: 4px 11px;
+        }
+        .nstc-meta-chip strong { color: var(--blue-deep); font-weight: 600; }
+
+        /* 榮譽並列 */
+        .honor-list--grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
         /* ── 著作 ── */
@@ -994,11 +1063,9 @@
         }
 
         /* ── 響應式 ── */
-        @media (max-width: 900px) {
-            .dual-grid { grid-template-columns: 1fr; gap: 36px; }
-        }
-
         @media (max-width: 700px) {
+            .honor-list--grid { grid-template-columns: 1fr; }
+            .nstc-project-head { grid-template-columns: 1fr; }
             .hero::after { display: none; }
             .hero-inner {
                 grid-template-columns: 1fr;
@@ -1250,30 +1317,57 @@
             <div class="section-rule"></div>
         </div>
 
-        <div class="dual-grid">
+        <div class="projects-stack">
             <div>
                 <h3 class="subsection-title">研究計畫 <em>Research Projects</em></h3>
-                <ul class="project-list">
-                    <li class="project-item">
-                        <div>
-                            <div class="project-name">六都數位政策調查</div>
-                            <div class="project-meta">台灣數位平台經濟協會 &ensp;｜&ensp; 2025.08 – 2026.04</div>
+
+                <div class="project-group">
+                    <div class="project-group-label">國科會專題研究計畫</div>
+                    <div class="nstc-project">
+                        <div class="nstc-project-head">
+                            <div class="nstc-project-name">演算法下的守門人：臺灣 AI 執法之決策偏誤、專業衝擊與正當性建構</div>
+                            <span class="project-role project-role--pi">計畫主持人</span>
                         </div>
-                        <span class="project-role">協同主持人</span>
-                    </li>
-                    <li class="project-item">
-                        <div>
-                            <div class="project-name">資料管理技術實踐與政策發展資訊服務案</div>
-                            <div class="project-meta">數位發展部 &ensp;｜&ensp; 2025.09 – 2026.11</div>
+                        <div class="nstc-project-meta">
+                            <span class="nstc-meta-chip">國科會專題研究計畫</span>
+                            <span class="nstc-meta-chip">計畫編號 <strong>115-2410-H-261-001-SS3</strong></span>
+                            <span class="nstc-meta-chip">2026.08 – 2029.07</span>
+                            <span class="nstc-meta-chip">經費總額 <strong>NT$ 2,374,000</strong></span>
                         </div>
-                        <span class="project-role">顧問</span>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+
+                <div class="project-group">
+                    <div class="project-group-label">委託研究計畫</div>
+                    <ul class="project-list">
+                        <li class="project-item">
+                            <div>
+                                <div class="project-name">115 年推動政府數位治理服務案（核定中）</div>
+                                <div class="project-meta">數位發展部 &ensp;｜&ensp; 2026.09 – 2027.08</div>
+                            </div>
+                            <span class="project-role">子計畫協同主持人</span>
+                        </li>
+                        <li class="project-item">
+                            <div>
+                                <div class="project-name">六都數位政策調查</div>
+                                <div class="project-meta">台灣數位平台經濟協會 &ensp;｜&ensp; 2025.08 – 2026.04</div>
+                            </div>
+                            <span class="project-role">協同主持人</span>
+                        </li>
+                        <li class="project-item">
+                            <div>
+                                <div class="project-name">資料管理技術實踐與政策發展資訊服務案</div>
+                                <div class="project-meta">數位發展部 &ensp;｜&ensp; 2025.09 – 2026.11</div>
+                            </div>
+                            <span class="project-role">顧問</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div id="honors">
                 <h3 class="subsection-title">個人榮譽 <em>Honors &amp; Awards</em></h3>
-                <ul class="honor-list">
+                <ul class="honor-list honor-list--grid">
                     <li class="honor-item">
                         <div class="honor-year">2025</div>
                         <div class="honor-text">
